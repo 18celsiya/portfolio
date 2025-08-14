@@ -1,10 +1,10 @@
-<div style="display: flex; align-items: flex-start; gap: 20px;">
+<div style="display: flex; align-items: flex-start; gap: 30px;">
 
   <!-- Profile Picture -->
-  <img src="My_pic.jpg" alt="Profile Picture" width="120" style="border-radius: 50%;"/>
+  <img src="My_pic.jpg" alt="Profile Picture" width="150" style="border-radius: 50%;"/>
 
   <!-- Info Column -->
-  <div>
+  <div style="margin-left: 10px;">
     <h1 style="margin:0"><strong>CELSIYA ANTONYSAMY</strong></h1>
     <h3 style="margin:5px 0">Data Scientist</h3>
 
@@ -17,13 +17,13 @@
       <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Email" width="24" height="24"/>
     </a>
 
-    <p style="margin-top:10px; max-width:500px;">
+    <p style="margin-top:10px; max-width:550px; margin-left:10px;">
       I am a Data Scientist working at Verian Group on the Population Studies Data Team. With a 1st Class MSc in Data Science and hands-on experience in AI, machine learning, and deep learning, I specialize in building tools and dashboards that not only analyze data but also make life easier for teams and stakeholders. From automating repetitive workflows to creating AI-driven applications, I thrive on making data accessible, actionable, and impactful for real-world projects.
     </p>
 
     <!-- What I Do Section -->
-    <h3>🚀 What I Do</h3>
-    <ul>
+    <h3 style="margin-left:10px;">🚀 What I Do</h3>
+    <ul style="margin-left:20px;">
       <li>Automate workflows and reporting to save teams significant time</li>
       <li>Clean, analyze, and visualize complex datasets for actionable insights</li>
       <li>Build AI and machine learning tools, including NLP and deep learning models</li>
@@ -31,4 +31,6 @@
     </ul>
 
   </div>
+</div>
+
 </div>
