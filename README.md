@@ -50,4 +50,31 @@
   </div> <!-- closes Info Column -->
 </div> <!-- closes Flex Container -->
 
+<h2 id="projects">📊 Data Viz Project</h2>
+
+<!-- Project Thumbnail -->
+<img src="Financial_Analysis.jpg" alt="Dashboard Thumbnail" 
+     style="width:250px; cursor:pointer; border-radius:8px;" 
+     onclick="openModal('Dashboard Project', 'path-to-dashboard-full.jpg')"/>
+
+<!-- Modal Structure -->
+<div id="modal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background-color: rgba(0,0,0,0.7); justify-content:center; align-items:center;">
+  <div style="background:white; padding:20px; border-radius:10px; max-width:600px; text-align:center; position:relative;">
+    <span onclick="closeModal()" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size:20px;">&times;</span>
+    <h3 id="modalTitle"></h3>
+    <img id="modalImage" src="" alt="Project Image" style="width:100%; border-radius:8px; margin-top:10px;"/>
+  </div>
 </div>
+
+<script>
+function openModal(title, imgSrc) {
+  document.getElementById('modalTitle').innerText = title;
+  document.getElementById('modalImage').src = imgSrc;
+  document.getElementById('modal').style.display = 'flex';
+}
+
+function closeModal() {
+  document.getElementById('modal').style.display = 'none';
+}
+</script>
+
