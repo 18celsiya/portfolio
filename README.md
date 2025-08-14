@@ -1,4 +1,4 @@
-<!-- Collapsible Ribbon (simplified to direct link) -->
+<!-- Collapsible Ribbon -->
 <style>
   /* Ribbon container */
   .ribbon {
@@ -9,12 +9,12 @@
     align-items: center;
     font-family: sans-serif;
     border-radius: 0 0 10px 10px;
-    margin-bottom: 20px; /* space below ribbon */
+    margin-bottom: 20px;
   }
 
   /* Ribbon buttons */
   .ribbon button {
-    background-color: #FFD700; /* Golden yellow */
+    background-color: #FFD700; /* Yellow */
     color: #000;
     border: none;
     padding: 5px 12px;
@@ -23,27 +23,52 @@
     cursor: pointer;
     font-weight: bold;
   }
+
+  /* Collapsible content */
+  .ribbon-content {
+    display: none;
+    background-color: #FFF8DC; /* Lighter yellow */
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .ribbon-content img {
+    width: 90%;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
 </style>
 
 <div class="ribbon">
-  <!-- Data Viz button linking directly to the dashboard PNG -->
-  <a href="dashboards/Financial_Analysis.png" target="_blank">
-    <button>Data Viz</button>
-  </a>
-  <!-- DS Blogs button placeholder -->
-  <a href="https://www.linkedin.com/in/celsiya-antonysamy/" target="_blank">
-    <button>DS Blogs</button>
-  </a>
+  <!-- Data Viz button: links to dashboards folder -->
+  <button onclick="window.location.href='dashboards/'">Data Viz</button>
+  
+  <!-- DS Blogs button: shows placeholder content -->
+  <button onclick="toggleRibbon('dsblogs')">DS Blogs</button>
 </div>
 
-<!-- Hide the theme’s default page title -->
+<!-- DS Blogs Content (placeholder) -->
+<div id="dsblogs" class="ribbon-content">
+  <h3>Data Science Blogs</h3>
+  <p>Coming soon...</p>
+</div>
+
+<script>
+  function toggleRibbon(id) {
+    const content = document.getElementById(id);
+    content.style.display = (content.style.display === "block") ? "none" : "block";
+  }
+</script>
+
+<!-- Hide default page title -->
 <style>
 .header, .site-title, .title, h1 {
   display: none !important;
 }
 </style>
 
-<!-- Profile Section -->
 <div style="display: flex; align-items: flex-start; gap: 40px;">
 
   <!-- Profile Picture -->
@@ -85,6 +110,6 @@
       <li>Build AI and machine learning tools, including NLP and deep learning models</li>
       <li>Design interactive dashboards and build Shiny interfaces for non-technical stakeholders</li>
     </ul>
-  </div> <!-- closes Info Column -->
 
+  </div> <!-- closes Info Column -->
 </div> <!-- closes Flex Container -->
