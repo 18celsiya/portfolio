@@ -1,3 +1,10 @@
+<style>
+/* Hide the theme’s default page title */
+.header, .site-title, .title, h1 {
+  display: none !important;
+}
+</style>
+
 <div style="display: flex; align-items: flex-start; gap: 40px;">
 
   <!-- Profile Picture -->
