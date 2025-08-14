@@ -8,7 +8,7 @@
 <div style="display: flex; align-items: flex-start; gap: 40px;">
 
   <!-- Profile Picture -->
-  <img src="My_pic.jpg" alt="Profile Picture" width="180" style="border-radius: 10px;"/>
+  <img src="path-to-your-pic.jpg" alt="Profile Picture" width="180" style="border-radius: 10px;"/>
 
   <!-- Info Column -->
   <div>
