@@ -1,6 +1,6 @@
 <style>
-/* Hide the theme’s default page title */
-.header, .site-title, .title, h1 {
+/* Hide only the theme’s default page title */
+.header, .site-title, .title {
   display: none !important;
 }
 </style>
@@ -8,7 +8,7 @@
 <div style="display: flex; align-items: flex-start; gap: 40px;">
 
   <!-- Profile Picture -->
-  <img src="path-to-your-pic.jpg" alt="Profile Picture" width="180" style="border-radius: 10px;"/>
+  <img src="My_pic.jpg" alt="Profile Picture" width="180" style="border-radius: 10px;"/>
 
   <!-- Info Column -->
   <div>
@@ -46,8 +46,8 @@
       <li>Build AI and machine learning tools, including NLP and deep learning models</li>
       <li>Design interactive dashboards and build Shiny interfaces for non-technical stakeholders</li>
     </ul>
-
   </div>
+
 </div>
 
 </div>
