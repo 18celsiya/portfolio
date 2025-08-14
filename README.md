@@ -1,41 +1,68 @@
-<!-- Ribbon -->
-<div style="width:100%; background:#0078D7; color:white; padding:10px; display:flex; align-items:center; gap:20px; font-family:sans-serif;">
-  <strong style="font-size:16px;">My Portfolio</strong>
-  <button onclick="showDataViz()" 
-          style="background:white; color:#0078D7; border:none; padding:5px 12px; border-radius:4px; cursor:pointer; font-weight:bold;">
-    📊 Data Viz
-  </button>
-  <button onclick="showDSBlogs()" 
-          style="background:white; color:#0078D7; border:none; padding:5px 12px; border-radius:4px; cursor:pointer; font-weight:bold;">
-    ✍️ DS Blogs
-  </button>
+<!-- Collapsible Ribbon -->
+<style>
+  /* Ribbon container */
+  .ribbon {
+    background-color: #FFD700; /* Yellow */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end; /* buttons on the right */
+    align-items: center;
+    font-family: sans-serif;
+    border-radius: 0 0 10px 10px;
+  }
+
+  /* Ribbon buttons */
+  .ribbon button {
+    background-color: #FFA500; /* Darker yellow/orange */
+    color: #000;
+    border: none;
+    padding: 5px 12px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  /* Collapsible content */
+  .ribbon-content {
+    display: none;
+    background-color: #FFF8DC; /* Light yellow */
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .ribbon-content img {
+    width: 90%;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+</style>
+
+<div class="ribbon">
+  <button onclick="toggleRibbon('dataviz')">Data Viz</button>
+  <button onclick="toggleRibbon('dsblogs')">DS Blogs</button>
 </div>
 
-<!-- Modal for Data Viz -->
-<div id="dataVizModal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background-color: rgba(0,0,0,0.7); justify-content:center; align-items:center;">
-  <div style="background:white; padding:20px; border-radius:10px; max-width:800px; text-align:center; position:relative;">
-    <span onclick="closeDataViz()" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size:24px;">&times;</span>
-    <h3>Data Viz Projects</h3>
-    <!-- Project Images -->
-    <img src="Financial_Analysis.jpg" alt="Dashboard" style="width:90%; border-radius:8px; margin-top:10px;"/>
-  </div>
+<!-- Data Viz Content -->
+<div id="dataviz" class="ribbon-content">
+  <h3>Data Viz Projects</h3>
+  <img src="Financial_Analysis.png" alt="Dashboard Project"/>
+</div>
+
+<!-- DS Blogs Content -->
+<div id="dsblogs" class="ribbon-content">
+  <h3>Data Science Blogs</h3>
+  <p>Coming soon...</p>
 </div>
 
 <script>
-function showDataViz() {
-  document.getElementById('dataVizModal').style.display = 'flex';
-}
-
-function closeDataViz() {
-  document.getElementById('dataVizModal').style.display = 'none';
-}
-
-// Placeholder function for DS Blogs (you can add modal for blogs similarly)
-function showDSBlogs() {
-  alert('DS Blogs modal coming soon!');
-}
+  function toggleRibbon(id) {
+    const content = document.getElementById(id);
+    content.style.display = (content.style.display === "block") ? "none" : "block";
+  }
 </script>
-
 
 
 <style>
