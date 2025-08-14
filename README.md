@@ -8,7 +8,7 @@ I am a Data Scientist working at Verian Group on the Population Studies Data Tea
 - Automate workflows and reporting to save teams significant time  
 - Clean, analyze, and visualize complex datasets for actionable insights  
 - Build AI and machine learning tools, including NLP and deep learning models  
-- Design interactive dashboards for non-technical stakeholders
+- Design interactive dashboards and build Shiny interfaces for non-technical stakeholders
 
 
 
