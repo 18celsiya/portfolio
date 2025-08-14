@@ -1,4 +1,14 @@
-# Hi, I am Celsiya👋
+# **CELSIYA ANTONYSAMY**
+
+**Data Scientist**
+
+<a href="https://www.linkedin.com/in/celsiya-antonysamy/" target="_blank">
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="24" height="24"/>
+</a>
+<a href="mailto:joescelsiya@gmail.com">
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Email" width="24" height="24"/>
+</a>
+
 
 I am a Data Scientist working at Verian Group on the Population Studies Data Team. With a 1st Class MSc in Data Science and hands-on experience in AI, machine learning, and deep learning, I specialize in building tools and dashboards that not only analyze data but also **make life easier for teams and stakeholders**. From automating repetitive workflows to creating AI-driven applications, I thrive on making data accessible, actionable, and impactful for real-world projects.
 
