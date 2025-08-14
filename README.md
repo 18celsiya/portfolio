@@ -1,14 +1,11 @@
 # **CELSIYA ANTONYSAMY**
 
-**Data Scientist**
+# **Data Scientist**
 
-</a>
-</a>
+
 <a href="https://www.linkedin.com/in/celsiya-antonysamy/" target="_blank">
   <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="24" height="24"/>
-</a>
-</a>
-</a>
+</a>&nbsp;&nbsp;
 <a href="mailto:joescelsiya@gmail.com">
   <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg" alt="Email" width="24" height="24"/>
 </a>
