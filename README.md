@@ -1,6 +1,6 @@
 <style>
-/* Hide only the theme’s default page title */
-.header, .site-title, .title {
+/* Hide the theme’s default page title */
+.header, .site-title, .title, h1 {
   display: none !important;
 }
 </style>
@@ -46,8 +46,8 @@
       <li>Build AI and machine learning tools, including NLP and deep learning models</li>
       <li>Design interactive dashboards and build Shiny interfaces for non-technical stakeholders</li>
     </ul>
-  </div>
 
-</div>
+  </div> <!-- closes Info Column -->
+</div> <!-- closes Flex Container -->
 
 </div>
