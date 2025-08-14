@@ -1,11 +1,18 @@
-<!-- Collapsible Ribbon -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Celsiya Antonysamy | Portfolio</title>
+
+<!-- Ribbon CSS -->
 <style>
   /* Ribbon container */
   .ribbon {
-    background-color: #FFFACD; /* Light yellow */
+    background-color: #FFF8B0; /* Light Yellow */
     padding: 10px 20px;
     display: flex;
-    justify-content: flex-end; /* buttons on the right */
+    justify-content: flex-end;
     align-items: center;
     font-family: sans-serif;
     border-radius: 0 0 10px 10px;
@@ -24,52 +31,22 @@
     font-weight: bold;
   }
 
-  /* Collapsible content */
-  .ribbon-content {
-    display: none;
-    background-color: #FFF8DC; /* Lighter yellow */
-    padding: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin-bottom: 20px;
-  }
-
-  .ribbon-content img {
-    width: 90%;
-    border-radius: 8px;
-    margin-top: 10px;
+  /* Hide default page title */
+  .header, .site-title, .title, h1 {
+    display: none !important;
   }
 </style>
+</head>
+<body>
 
+<!-- Ribbon -->
 <div class="ribbon">
-  <!-- Data Viz button: links to dashboards folder -->
-  <button onclick="window.location.href='dashboards/'">Data Viz</button>
-  
-  <!-- DS Blogs button: shows placeholder content -->
-  <button onclick="toggleRibbon('dsblogs')">DS Blogs</button>
+  <button onclick="window.location.href='dashboards/index.html'">Data Viz</button>
+  <button onclick="alert('Coming soon...')">DS Blogs</button>
 </div>
 
-<!-- DS Blogs Content (placeholder) -->
-<div id="dsblogs" class="ribbon-content">
-  <h3>Data Science Blogs</h3>
-  <p>Coming soon...</p>
-</div>
-
-<script>
-  function toggleRibbon(id) {
-    const content = document.getElementById(id);
-    content.style.display = (content.style.display === "block") ? "none" : "block";
-  }
-</script>
-
-<!-- Hide default page title -->
-<style>
-.header, .site-title, .title, h1 {
-  display: none !important;
-}
-</style>
-
-<div style="display: flex; align-items: flex-start; gap: 40px;">
+<!-- Profile Section -->
+<div style="display: flex; align-items: flex-start; gap: 40px; margin-left: 20px; margin-right: 20px;">
 
   <!-- Profile Picture -->
   <img src="My_pic.jpg" alt="Profile Picture" width="180" style="border-radius: 10px;"/>
@@ -113,3 +90,6 @@
 
   </div> <!-- closes Info Column -->
 </div> <!-- closes Flex Container -->
+
+</body>
+</html>
