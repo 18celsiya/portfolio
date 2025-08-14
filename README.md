@@ -1,3 +1,43 @@
+<!-- Ribbon -->
+<div style="width:100%; background:#0078D7; color:white; padding:10px; display:flex; align-items:center; gap:20px; font-family:sans-serif;">
+  <strong style="font-size:16px;">My Portfolio</strong>
+  <button onclick="showDataViz()" 
+          style="background:white; color:#0078D7; border:none; padding:5px 12px; border-radius:4px; cursor:pointer; font-weight:bold;">
+    📊 Data Viz
+  </button>
+  <button onclick="showDSBlogs()" 
+          style="background:white; color:#0078D7; border:none; padding:5px 12px; border-radius:4px; cursor:pointer; font-weight:bold;">
+    ✍️ DS Blogs
+  </button>
+</div>
+
+<!-- Modal for Data Viz -->
+<div id="dataVizModal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background-color: rgba(0,0,0,0.7); justify-content:center; align-items:center;">
+  <div style="background:white; padding:20px; border-radius:10px; max-width:800px; text-align:center; position:relative;">
+    <span onclick="closeDataViz()" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size:24px;">&times;</span>
+    <h3>Data Viz Projects</h3>
+    <!-- Project Images -->
+    <img src="Financial_Analysis.jpg" alt="Dashboard" style="width:90%; border-radius:8px; margin-top:10px;"/>
+  </div>
+</div>
+
+<script>
+function showDataViz() {
+  document.getElementById('dataVizModal').style.display = 'flex';
+}
+
+function closeDataViz() {
+  document.getElementById('dataVizModal').style.display = 'none';
+}
+
+// Placeholder function for DS Blogs (you can add modal for blogs similarly)
+function showDSBlogs() {
+  alert('DS Blogs modal coming soon!');
+}
+</script>
+
+
+
 <style>
 /* Hide the theme’s default page title */
 .header, .site-title, .title, h1 {
@@ -49,32 +89,4 @@
 
   </div> <!-- closes Info Column -->
 </div> <!-- closes Flex Container -->
-
-<h2 id="projects">📊 Data Viz Project</h2>
-
-<!-- Project Thumbnail -->
-<img src="Financial_Analysis.jpg" alt="Dashboard Thumbnail" 
-     style="width:250px; cursor:pointer; border-radius:8px;" 
-     onclick="openModal('Dashboard Project', 'path-to-dashboard-full.jpg')"/>
-
-<!-- Modal Structure -->
-<div id="modal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; background-color: rgba(0,0,0,0.7); justify-content:center; align-items:center;">
-  <div style="background:white; padding:20px; border-radius:10px; max-width:600px; text-align:center; position:relative;">
-    <span onclick="closeModal()" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size:20px;">&times;</span>
-    <h3 id="modalTitle"></h3>
-    <img id="modalImage" src="" alt="Project Image" style="width:100%; border-radius:8px; margin-top:10px;"/>
-  </div>
-</div>
-
-<script>
-function openModal(title, imgSrc) {
-  document.getElementById('modalTitle').innerText = title;
-  document.getElementById('modalImage').src = imgSrc;
-  document.getElementById('modal').style.display = 'flex';
-}
-
-function closeModal() {
-  document.getElementById('modal').style.display = 'none';
-}
-</script>
 
